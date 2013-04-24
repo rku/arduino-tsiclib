@@ -1,7 +1,7 @@
 
 /**
- *  test ard-tsiclib by reading the sensor every five seconds and printing the
- *  measured data to a serial port
+ *  test ard-tsiclib by reading the temperature every five seconds
+ *  and output the measured data to the serial port
  */
 
 #include "TSIC.h"       // include the library
@@ -9,17 +9,17 @@
 #define TSICPIN     12  // connected to the sensor's signal pin
 #define TSICVCCPIN  11  // connected to the sensor's vcc pin
 
-// declare a library object representing the sensor
+// instantiate the library, representing the sensor
 TSIC tsic(TSICVCCPIN, TSICPIN);
 
 void setup() {
-    Serial.begin(9600);
+    Serial.begin(9600); // set up the serial port
 }
 
 void loop() {
 
-    // read the temperature from the sensor
-    float temperature = tsic.readTemperature();;
+    // read temperature from sensor
+    float temperature = tsic.readTemperature();
 
     // check if there was an error and inform the user 
     if(isnan(temperature)) {
