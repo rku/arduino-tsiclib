@@ -1,0 +1,2 @@
+TSIC            KEYWORD1
+readTemperature KEYWORD2
