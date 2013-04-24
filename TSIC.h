@@ -25,7 +25,7 @@
  */
 
 #ifndef TSIC_H
-#define TSIC_H
+#define TSIC_H  1
 
 #include <inttypes.h>
 #include "Arduino.h"
