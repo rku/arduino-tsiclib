@@ -5,7 +5,7 @@ This is a library for the Arduino platform providing a clean interface to
 TSIC digital temperature sensors like 206, 305 or similar. It is mostly a
 cleanup of Rolf W.'s code available at [1] (which is based on code from
 [2]). However, it also comes with useful improvements like not dropping 
-precision when returning measured temperatures (which the original code
+precision when returning measured temperatures (like the original code
 does).
 
 # How to use it?
