@@ -42,7 +42,7 @@ TSIC::TSIC(uint8_t vcc_pin, uint8_t signal_pin)
 
 uint8_t TSIC::readByte() const
 {
-    uint8_t byte = 0;
+    uint16_t byte = 0;
     int parity = 0;
 
     while(TSIC_HIGH);
@@ -67,7 +67,7 @@ uint8_t TSIC::readByte() const
         return NAN;
     }
 
-    return byte;
+    return (uint8_t)(byte >> 1); // return byte without parity bit
 }
 
 float TSIC::readTemperature() const
