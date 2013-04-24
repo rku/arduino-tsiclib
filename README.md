@@ -1,11 +1,11 @@
 
 # What is it?
 
-ard-tsiclib is a library for the Arduino platform providing a clean
+arduino-tsiclib is a library for the Arduino platform providing a clean
 interface to TSIC digital temperature sensors like 206, 305 or similar.
 It is mostly a cleanup of Rolf W.'s code available at [arduino.cc][1]
 (which itself is based on code from [mikrocontroller.net][2]). However,
-ard-tsiclib also comes with useful improvements like not dropping
+arduino-tsiclib also comes with useful improvements like not dropping
 precision when returning measured temperatures (like the original code
 does).
 
