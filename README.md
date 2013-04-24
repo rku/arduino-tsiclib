@@ -3,10 +3,10 @@
 
 This is a library for the Arduino platform providing a clean interface to
 TSIC digital temperature sensors like 206, 305 or similar. It is mostly a
-cleanup of Rolf W.'s code available at [1] (which is based on code from
-[2]). However, it also comes with useful improvements like not dropping 
-precision when returning measured temperatures (like the original code
-does).
+cleanup of Rolf W.'s code available at [arduino.cc][1] (which itself is
+based on code from [mikrocontroller.net][2]). However, it also comes with
+useful improvements like not dropping precision when returning measured
+temperatures (like the original code does).
 
 # How to use it?
 
@@ -26,6 +26,6 @@ list.
 
 This needs to be written, sorry.
 
-    [1]: http://playground.arduino.cc/Code/Tsic
-    [2]: http://www.mikrocontroller.net/topic/82087
+[1]: http://playground.arduino.cc/Code/Tsic
+[2]: http://www.mikrocontroller.net/topic/82087
 
