@@ -1,2 +1,2 @@
-TSIC            KEYWORD1
-readTemperature KEYWORD2
+TSIC                KEYWORD1
+readTemperature     KEYWORD2
