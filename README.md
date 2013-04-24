@@ -1,17 +1,19 @@
-# A library for reading the TSIC 206/305 sensors from the Arduino platform
+
+# What is it?
 
 This is a library for the Arduino platform providing a clean interface to
 TSIC digital temperature sensors like 206, 305 or similar. It is mostly a
-cleanup of Rolf W.'s code available at [1] (which is based on code from [2]).
+cleanup of Rolf W.'s code available at [1] (which is based on code from
+[2]). However, it also comes with useful improvements like not dropping 
+precision when returning measured temperatures (which the original code
+does).
 
-It also comes with useful improvements like more precise sensor data.
-
-# How to use it
+# How to use it?
 
 Just copy the library to your Arduino libraries folder. See the included
 example on how to use the library.
 
-# Note
+# Note:
 
 When calling readTemperature(), the sensor is turned on. After reading data
 has been finished, the sensor is turned off again in order to save power.
