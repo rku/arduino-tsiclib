@@ -49,14 +49,14 @@ uint8_t TSIC::readByte() const
     while(TSIC_LOW);
 
     // read 8 bits and a parity bit
-    for(int i = 0; i < 9; i++) {
+    for(int i = 0; i < 9; ++i) {
 
         while(TSIC_HIGH);
         delayMicroseconds(60);
 
         if(TSIC_HIGH) {
             byte |= 1 << (8 - i);
-            parity++;
+            ++parity;
         } else {
             while(TSIC_LOW);
         }
