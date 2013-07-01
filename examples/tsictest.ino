@@ -1,4 +1,3 @@
-
 /**
  *  test ard-tsiclib by reading the temperature every five seconds
  *  and output the measured data to the serial port
@@ -33,4 +32,3 @@ void loop() {
 
     delay(5000);    // wait 5 seconds
 }
-

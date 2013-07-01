@@ -91,4 +91,3 @@ float TSIC::readTemperature() const
     float sensor_value = (byte1 << 8) | byte2;
     return (sensor_value / 2047. * 200.) - 50.; // equation from data sheet
 }
-
